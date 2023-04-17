@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.1.3-css/bootstrap.css"/>
+   	<link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.1.3-css/bootstrap-grid.css"/>
+   	<link rel="stylesheet" type="text/css" href="../lib/bootstrap-4.1.3-css/bootstrap-reboot.css"/>
+   	
+	<script src="../lib/jquery-3.6.4.js"></script>
+	<script src="../lib/jquery.mask.js"></script>
+   	<script src="../lib/bootstrap-4.1.3-js/bootstrap.js"></script>
+   	<script src="../lib/bootstrap-4.1.3-js/bootstrap.bundle.js"></script>
+   	<script src="index.js"></script>
+   	
+    <title>Meus jogos</title>
+</head>
+<body>
+   <h1>Sistema de cadastro de jogos</h1>
+   
+	<form action="">
+		<div id="geral">
+		
+			<div id="dadosEntrada">
+				<table>
+					<tr>
+						<td>Nome do Jogo: </td>
+						<td>
+							<input class="form-control" type="text" id="nomeJogo"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Data do Lançamento: </td>
+						<td>
+							<input class='input-group date' type="text" id="dataLancamento"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Tamanho: </td>
+						<td>
+							<input class="form-control" type="text" id="tamanho"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<div id="corpo">
+				<table border="1">
+					<thead>
+						<tr>
+							<th></th>
+							<th>ID</th>
+							<th>NOME DO JOGO</th>
+							<th>DATA LANÇAMENTO</th>
+							<th>TAMANHO</th>
+						</tr>
+					</thead>
+					<tbody id="jogos">
+						<tr>
+							<td><input type="radio" name="id"/></td>
+							<td>001</td>
+							<td>League of Legend</td>
+							<td>12/10/2007</td>
+							<td>10Gb</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="id"/></td>
+							<td>002</td>
+							<td>Prototype</td>
+							<td>01/02/2003</td>
+							<td>12Gb</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<br>
+			<div id="botoes">
+				<input type="button" value="ADICIONAR" onclick="adicionarItemTabela();"/>
+				<input type="button" value="REMOVER" onclick=""/>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
